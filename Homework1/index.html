@@ -13,42 +13,82 @@
             <img class="panel_logo" src="./img/panel_logo.png" alt="panel_logo">
             <p class="brand_name">BRAN<span class="brand_name__D">D</span></p>
             <div class="search_panel">
-                <button class="button_browse">
-                    <input type="checkbox" class="button_browse__checkbox">
-                    <label class="button_browse__label">Browse</label> 
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-                <div class="search_panel__hidden_menu">
-                    <ul class="search_panel__hidden_menu__ul">WOMEN
-                        <div class="search_panel__hidden_menu__sharp"></div>
-                        <ul class="search_panel__hidden_menu__ul__low">Dresses</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Tops</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Sweaters/Knits</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Jackets/Coats</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Blazers</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Denim</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Leggins/Pants</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Skirts/Shorts</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Accessories</ul>
+                <details class="button_browse">
+                    <summary>Browse<i class="fa fa-caret-down" aria-hidden="true"></i></summary> 
+                    <ul class="button_browse__hidden_menu">   
+                        <ul class="button_browse__hidden_menu__ul">WOMEN
+                            <div class="button_browse__hidden_menu__sharp"></div>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Dresses</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Tops</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Sweaters/Knits</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Jackets/Coats</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Blazers</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Denim</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Leggins/Pants</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Skirts/Shorts</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Accessories</a>
+                        </ul>    
+                        <ul class="button_browse__hidden_menu__ul">MEN
+                            <div class="button_browse__hidden_menu__sharp"></div>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Tees/Tank tops</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Shirts/Polos</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Sweaters</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Sweatshirts/Hoodies</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Blazers</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Jackets/vests</a>
+                        </ul>
                     </ul>
-
-                    <ul class="search_panel__hidden_menu__ul">MEN
-                        <div class="search_panel__hidden_menu__sharp"></div>
-                        <ul class="search_panel__hidden_menu__ul__low">Tees/Tank tops</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Shirts/Polos</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Sweaters</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Sweatshirts/Hoodies</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Blazers</ul>
-                        <ul class="search_panel__hidden_menu__ul__low">Jackets/vests</ul>
-                    </ul>
-                </div>
+                </details>
+                
                 <input class="input_field" type="search" placeholder="Search for Item..." name="search">
                 <button class="button_search"><img class="search_logo" src="./img/icons8-search-16.png" style="width: 14px; height: 14px;" alt="search_logo"></button>
             </div>
-            <div class="cart_icons">
-                <img class="cart_icon" src="./img/cart_icon.svg" alt="cart_icon">
-                <p class="ellipse_cart_icon">2</p>
-            </div>
+            <details class="cart_icons">
+                <summary><img class="cart_icon" src="./img/cart_icon.svg" alt="cart_icon"><p class="ellipse_cart_icon">2</p></summary>
+                <ul>
+                    <div class="cart_card">
+                        <div class="cart_card__img">
+                            <a href="#"><img src="./img/cart_card_1.png" alt="card1"></a>
+                        </div>
+                        <div class="cart_card__info">
+                            <p class="cart_card__info__name">Rebox Zane</p>
+                            <div class="cart_card__rank">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>                            
+                            <p class="cart_card__info__price">1  <span>x</span>   $250</p>
+                        </div>
+                        <a href="#" class="cart_delete"><i class="fa fa-times-circle" aria-hidden="true"></i></a>                        
+                    </div>
+                    <div class="cart_sharp"></div>
+                    <div class="cart_card">
+                        <div class="cart_card__img">
+                            <a href="#"><img src="./img/card_cart_2.png" alt="card2"></a>
+                        </div>
+                        <div class="cart_card__info">
+                            <p class="cart_card__info__name">Rebox Zane</p>
+                            <div class="cart_card__rank">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                            <p class="cart_card__info__price">1  <span>x</span>   $250</p>
+                        </div>
+                        <a href="#" class="cart_delete"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="cart_sharp"></div>
+                    <p class="cart_total_price">TOTAL<span>$500.00</span></p>
+                    <a href="#" class="cart_checkout_link">Checkout</a>
+                    <a href="#" class="go_cart_link">Go to cart</a>
+                </ul>
+            
+            
+            </details>
             <button class="account_button">
                 <p class="account_button__text">My Account</p>
                 <svg xmlns="http://www.w3.org/2000/svg" height="12" width="14" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>

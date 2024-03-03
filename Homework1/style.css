@@ -59,25 +59,52 @@ html {
   margin-bottom: 30px;
   margin-right: 349px;
 }
-.header__panel .search_panel__hidden_menu {
+.header__panel .search_panel .button_browse {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #222222;
+  width: 87px;
+  height: 36px;
+  background-color: #cdcdcc;
+  background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+  border: 1px solid #e6e6e6;
+  border-radius: 3px 0px 0px 3px;
+}
+.header__panel .search_panel .button_browse summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.header__panel .search_panel .button_browse summary .fa {
+  rotate: 0deg;
+}
+.header__panel .search_panel .button_browse summary::marker {
+  content: "";
+}
+.header__panel .search_panel .button_browse__hidden_menu {
   position: absolute;
-  display: none;
   width: 262px;
   height: 530px;
   background-color: #ffffff;
   border-radius: 5px;
   top: 35px;
   left: 0px;
+  display: flex;
+  flex-direction: column;
 }
-.header__panel .search_panel__hidden_menu__sharp {
+.header__panel .search_panel .button_browse__hidden_menu__sharp {
   width: 236px;
   height: 1px;
   background-color: #e8e8e8;
 }
-.header__panel .search_panel__hidden_menu__sharp {
+.header__panel .search_panel .button_browse__hidden_menu__sharp {
   align-self: center;
 }
-.header__panel .search_panel__hidden_menu__ul {
+.header__panel .search_panel .button_browse__hidden_menu__ul {
   font-family: Lato;
   font-size: 14px;
   line-height: 32px;
@@ -87,8 +114,10 @@ html {
   color: #232323;
   margin-top: 19px;
   margin-left: 15px;
+  display: flex;
+  flex-direction: column;
 }
-.header__panel .search_panel__hidden_menu__ul__low {
+.header__panel .search_panel .button_browse__hidden_menu__ul__low {
   font-family: Lato;
   font-size: 14px;
   line-height: 28px;
@@ -98,28 +127,11 @@ html {
   text-transform: none;
   margin-left: 7px;
 }
-.header__panel .search_panel__hidden_menu__ul__low:hover {
+.header__panel .search_panel .button_browse__hidden_menu__ul__low:hover {
   color: #f16d7f;
 }
-.header__panel .search_panel .button_browse {
-  font-family: Lato;
-  font-size: 14px;
-  line-height: 32px;
-  font-weight: 300;
-  letter-spacing: 0.025em;
-  color: #222222;
-  width: 87px;
-  height: 38px;
-  background-color: #cdcdcc;
-  background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
-  border: 1px solid #e6e6e6;
-  border-radius: 3px 0px 0px 3px;
-}
-.header__panel .search_panel .button_browse__checkbox {
-  display: none;
-}
-.header__panel .search_panel .button_browse__checkbox:checked .search_panel__hidden_menu {
-  display: block;
+.header__panel .search_panel .button_browse[open] > summary .fa {
+  rotate: 180deg;
 }
 .header__panel .search_panel .input_field {
   width: 280px;
@@ -144,11 +156,137 @@ html {
 }
 .header__panel .cart_icons {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 32px;
   height: 29px;
   margin-top: 40px;
   margin-bottom: 31px;
   margin-right: 26px;
+  z-index: 0;
+}
+.header__panel .cart_icons summary::marker {
+  content: "";
+}
+.header__panel .cart_icons ul {
+  width: 262px;
+  height: 440px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.header__panel .cart_icons ul .cart_card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 21px;
+  margin-bottom: 16px;
+  margin-left: 17px;
+  margin-right: 15px;
+}
+.header__panel .cart_icons ul .cart_card__info {
+  margin-left: 14px;
+}
+.header__panel .cart_icons ul .cart_card__info__name {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 10px;
+}
+.header__panel .cart_icons ul .cart_card__info .cart_card__rank {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+  width: 56px;
+}
+.header__panel .cart_icons ul .cart_card__info i.fa {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e4af48;
+}
+.header__panel .cart_icons ul .cart_card__info__price {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+.header__panel .cart_icons ul .cart_card__info__price span {
+  font-size: 10px;
+}
+.header__panel .cart_icons ul .cart_card .cart_delete {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: 55px;
+}
+.header__panel .cart_icons ul .cart_card .cart_delete .fa {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #c0c0c0;
+}
+.header__panel .cart_icons ul .cart_total_price {
+  display: flex;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-left: 18px;
+  margin-right: 16px;
+  margin-top: 19px;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+.header__panel .cart_icons ul .cart_checkout_link {
+  width: 225px;
+  height: 50px;
+  border: 1px solid #f16d7f;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f16d7f;
+  margin-left: 18px;
+  margin-right: 16px;
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__panel .cart_icons ul .go_cart_link {
+  width: 225px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  margin-left: 18px;
+  margin-right: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__panel .cart_icons .cart_sharp {
+  width: 229px;
+  height: 1px;
+  background-color: rgba(237, 237, 237, 0.74);
 }
 .header__panel .cart_icons .cart_icon {
   width: 32px;
@@ -156,6 +294,7 @@ html {
   z-index: 0;
 }
 .header__panel .cart_icons .ellipse_cart_icon {
+  z-index: 1;
   position: absolute;
   display: flex;
   top: -8px;
@@ -736,4 +875,8 @@ html {
   justify-content: center;
   align-items: center;
   transition: color as 0.1s;
+}
+
+#checkbox:checked + .button_browse__hidden_menu .button_browse__hidden_menu {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
