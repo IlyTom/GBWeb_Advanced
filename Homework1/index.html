@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +13,35 @@
             <img class="panel_logo" src="./img/panel_logo.png" alt="panel_logo">
             <p class="brand_name">BRAN<span class="brand_name__D">D</span></p>
             <div class="search_panel">
-                <button class="button_browse">Browse <img src="./img/browse_menu.png" style="width: 9px; height: 6px;" alt="browse_menu"></button>
+                <button class="button_browse">
+                    <input type="checkbox" class="button_browse__checkbox">
+                    <label class="button_browse__label">Browse</label> 
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
+                <div class="search_panel__hidden_menu">
+                    <ul class="search_panel__hidden_menu__ul">WOMEN
+                        <div class="search_panel__hidden_menu__sharp"></div>
+                        <ul class="search_panel__hidden_menu__ul__low">Dresses</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Tops</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Sweaters/Knits</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Jackets/Coats</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Blazers</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Denim</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Leggins/Pants</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Skirts/Shorts</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Accessories</ul>
+                    </ul>
+
+                    <ul class="search_panel__hidden_menu__ul">MEN
+                        <div class="search_panel__hidden_menu__sharp"></div>
+                        <ul class="search_panel__hidden_menu__ul__low">Tees/Tank tops</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Shirts/Polos</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Sweaters</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Sweatshirts/Hoodies</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Blazers</ul>
+                        <ul class="search_panel__hidden_menu__ul__low">Jackets/vests</ul>
+                    </ul>
+                </div>
                 <input class="input_field" type="search" placeholder="Search for Item..." name="search">
                 <button class="button_search"><img class="search_logo" src="./img/icons8-search-16.png" style="width: 14px; height: 14px;" alt="search_logo"></button>
             </div>
@@ -46,7 +75,215 @@
         </div>            
     </div>
     <div class="category">
-        
+        <a href="#" class="category__card_one">
+        <p class="category__card_text">HOT DEAL <span class="category_pink_text">FOR MEN</span></p>
+        </a>
+        <a href="#" class="category__card_two"> 
+            <p class="category__card_text">30% OFFER <span class="category_pink_text">WOMEN</span></p>
+        </a>
+        <a href="#" class="category__card_three"> 
+            <p class="category__card_text">LUXIROUS & TRENDY <span class="category_pink_text">ACCESORIES</span></p>          
+        </a>
+        <a href="#" class="category__card_four">
+            <p class="category__card_text">NEW ARRIVALS <span class="category_pink_text">FOR KIDS</span></p>
+        </a>        
+    </div>
+
+    <div class="products">
+        <p class="products__text1">Fetured Items</p>
+        <p class="products__text2">Shop for items based on what we featured in this week</p>
+        <div class="products__grid">
+            <a class="cell" href="#">
+                <div class="cell__img">
+                    <img src="./img/product_1.png" alt="1">
+                    <button class="cell__img__button">Add to Cart</button>
+                </div>
+                <div class="cell__footer">
+                    <p class="cell__text">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cell__price">$52.00</p>
+                </div>                
+            </a>
+            <a class="cell" href="#">
+                <div class="cell__img">
+                    <img src="./img/product_2.png" alt="2">
+                    <button class="cell__img__button">Add to Cart</button>
+                </div>
+                <div class="cell__footer">
+                    <p class="cell__text">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cell__price">$52.00</p>
+                </div>
+            </a>
+            <a class="cell" href="#">
+                <div class="cell__img">
+                    <img src="./img/product_3.png" alt="3">
+                    <button class="cell__img__button">Add to Cart</button>
+                </div>
+                <div class="cell__footer">
+                    <p class="cell__text">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cell__price">$52.00</p>
+                </div>
+            </a>
+            <a class="cell" href="#">
+                <div class="cell__img">
+                    <img src="./img/product_4.png" alt="4">
+                    <button class="cell__img__button">Add to Cart</button>
+                </div>
+                <div class="cell__footer">
+                    <p class="cell__text">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cell__price">$52.00</p>
+                </div>
+            </a>
+            <a class="cell" href="#">
+                <div class="cell__img">
+                    <img src="./img/product_5.png" alt="5">
+                    <button class="cell__img__button">Add to Cart</button>
+                </div>
+                <div class="cell__footer">
+                    <p class="cell__text">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cell__price">$52.00</p>
+                </div>
+            </a>
+            <a class="cell" href="#">
+                <div class="cell__img">
+                    <img src="./img/product_6.png" alt="6">
+                    <button class="cell__img__button">Add to Cart</button>
+                </div>
+                <div class="cell__footer">
+                    <p class="cell__text">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cell__price">$52.00</p>
+                </div>
+            </a>
+            <a class="cell" href="#">
+                <div class="cell__img">
+                    <img src="./img/product_7.png" alt="7">
+                    <button class="cell__img__button">Add to Cart</button>
+                </div>
+                <div class="cell__footer">
+                    <p class="cell__text">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cell__price">$52.00</p>
+                </div>
+            </a>
+            <a class="cell" href="#">
+                <div class="cell__img">
+                    <img src="./img/product_8.png" alt="8">
+                    <button class="cell__img__button">Add to Cart</button>
+                </div>
+                <div class="cell__footer">
+                    <p class="cell__text">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cell__price">$52.00</p>
+                </div>
+            </a>
+        </div>
+        <a href="#"><button class="products__all">Browse All Product <i class="fa fa-long-arrow-right" aria-hidden="false" style="font-size: 15px; color:#ffffff; width: 15px; height: 7px;"></i></button></a>
+    </div>
+
+    <div class="feature">
+        <div class="feature__left">
+            <img class="feature__left__img" src="./img/feature_img2.png" alt="opacity_img">
+            <p class="feature__left__text">30%  <span class="feature__left__text__pink"> OFFER </span></p>
+            <p class="feature__left__text__low">FOR WOMEN</p>
+        </div>
+        <div class="feature__right">
+            <div class="feature__right__card">
+                <img class="feature__right__card__logo1" src="./img/feature_logo1.png" alt="logo1" style="width: 45px; height: 32px;">
+                <div class="feature__right__card__text">
+                    <p class="feature__right__card__text__p1">Free Delivery</p>
+                    <p class="feature__right__card__text__p2">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+            <div class="feature__right__card">
+                <img class="feature__right__card__logo2" src="./img/feature_logo2.png" alt="logo2" style="width: 40px; height: 40px;">
+                <div class="feature__right__card__text">
+                    <p class="feature__right__card__text__p1">Sales & discounts</p>
+                    <p class="feature__right__card__text__p2">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+            <div class="feature__right__card">
+                <img class="feature__right__card__logo3" src="./img/feature_logo3.png" alt="logo3" style="width: 47px; height: 35px;">
+                <div class="feature__right__card__text">
+                    <p class="feature__right__card__text__p1">Quality assurance</p>
+                    <p class="feature__right__card__text__p2">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <img class="subscribe__back" src="./img/subsribe_blur.png" alt="subsribe_blur">
+        <div class="subscribe__right">
+            <img class="subscribe__img1" src="./img/subscribe_ellipse1.png" alt="photo">
+            <div>
+                <p class="subscribe__text1">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <p class="subscribe__text2"><span class="subscribe__text2__pink">Bin Burhan</span>
+                Dhaka, Bd</p>
+                <div class="subscribe__slide">
+                    <img class="subscribe__slider" src="./img/subscribe_slide.svg" alt="slider">
+                    <img class="subscribe__slider" src="./img/subscribe_slide.svg" alt="slider">
+                    <img class="subscribe__slider" src="./img/subscribe_slide.svg" alt="slider">
+                </div>
+            </div>
+        </div>
+        <div class="subscribe__left">
+            <p class="subscribe__left__p1">SUBSCRIBE</p>
+            <p class="subscribe__left__p2">FOR OUR NEWLETTER AND PROMOTION</p>
+            <div class="subscribe__left__input">
+                <input class="subscribe__left__input__text" type="email" placeholder="Enter Your Email">
+                <button class="subscribe__left__but">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="nav_brand">
+            <div class="brand_info">
+                <div class="brand_logo">
+                    <img class="brand_info__panel_logo" src="./img/panel_logo.png" alt="panel_logo">
+                    <p class="brand_info__brand_name">BRAN<span class="brand_info__brand_name__D">D</span></p>
+                </div>
+                <div class="brand_text">
+                    <p class="brand_logo__text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
+                    <p class="brand_logo__text">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                </div>
+            </div>
+            <div class="company">
+                <label class="label_name">COMPANY</label>
+                <a class="link_footer" href="#">Home</a>
+                <a class="link_footer" href="#">Shop</a>
+                <a class="link_footer" href="#">About</a>
+                <a class="link_footer" href="#">How It Works</a>
+                <a class="link_footer" href="#">Contact</a>
+            </div>
+            <div class="info">
+                <label class="label_name">INFORMATION</label>
+                <a class="link_footer" href="#">Tearms & Condition</a>
+                <a class="link_footer" href="#">Privacy Policy</a>
+                <a class="link_footer" href="#">How to Buy</a>
+                <a class="link_footer" href="#">How to Sell</a>
+                <a class="link_footer" href="#">Promotion</a>
+            </div>
+            <div class="shop_cat">
+                <label class="label_name">SHOP CATEGORY</label>
+                <a class="link_footer" href="#">Men</a>
+                <a class="link_footer" href="#">Women</a>
+                <a class="link_footer" href="#">Child</a>
+                <a class="link_footer" href="#">Apparel</a>
+                <a class="link_footer" href="#">Brows All</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright__text">© 2017  Brand  All Rights Reserved.</p>
+            <div class="link_icon">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
