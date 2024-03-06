@@ -1,0 +1,176 @@
+
+
+.breadcrumb{
+    background-color: #f8f3f4;
+    padding: 65px 230px 65px 228px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .text{
+        font-family: Lato;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $main_color_element;
+        
+    }
+    a{
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #636363;      
+    }
+    
+    .pink{
+        color: $main_color_element;
+    }
+
+}
+
+.img_slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 11px;
+    margin-bottom: 42px;
+    align-items: center;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    .fa{
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    .left_arrow, .right_arrow {
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42,42,42,0.14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right_arrow{
+        .fa{
+            rotate: 180deg;
+        }
+    }
+}
+
+.description_prod{
+    display: flex;
+    justify-content: center;    
+    background-color: #ffffff;
+    
+    &__block{
+        width: 1141px;
+        height: 730px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        margin-top: -84px; 
+             
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .collection{
+            width: 147px;            
+            display: block;
+            margin-top: 73px;
+            border-bottom: 1px solid #eaeaea;
+            &__text{
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 700;
+                color: $main_color_element;
+                margin-bottom: 15px;
+                
+            }
+        }
+        .name_product{
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #4d4d4d;
+            margin-top: 17px;
+            margin-bottom: 67px;
+        }
+        .name_info{
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #5e5e5e;
+            width: 639px;
+            height: 60px;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        .material_designer{
+            display: flex;
+            flex-direction: row;
+            gap: 44px;
+            
+            .material, .designer{
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 700;
+                color: #b9b9b9;
+            }
+            span{
+                color: #2f2f2f;
+            }
+        }
+        .price{
+            font-family: Lato;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #ef5b70;
+            margin-top: 37px;
+            margin-bottom: 43px;
+        }
+        .filter{
+            border-top: 1px solid #eaeaea;
+            padding-top: 63px;
+            select{
+                width: 144px;
+                height: 35px;
+                background-color: #ffffff;
+                border: 1px solid #eaeaea;
+                font-family: Lato;
+                font-size: 13px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #bcbcbc;
+            }
+            
+
+        }
+        .add_to_cart{
+            object{
+                width: 26px;
+                height: 24px;
+                fill: #ef5b70;
+                
+            }
+            p{
+                font-family: Lato;
+                font-size: 16px;
+                line-height: 1.2;
+                font-weight: 700;
+                color: #ef5b70;
+            }
+        }
+
+    }
+        
+}

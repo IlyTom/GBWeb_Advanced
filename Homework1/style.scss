@@ -1,3 +1,11 @@
+$main_color_element: #f16d7f;
+$main_text_color: #222222;
+$grid_gap: 20px;
+$grid_gap_row_products: 39px;
+$grid_gap_column_products: 32px;
+
+@import "single_page";
+
 * {
     text-decoration: none;
     margin: 0;
@@ -9,11 +17,7 @@
     src: url(./font/Lato-Regular.ttf);
 }
 
-$main_color_element: #f16d7f;
-$main_text_color: #222222;
-$grid_gap: 20px;
-$grid_gap_row_products: 39px;
-$grid_gap_column_products: 32px;
+
 
 html {
     width: 1600px;
@@ -383,17 +387,135 @@ html {
         margin-top: 12.5px;
         margin-bottom: 12.5px;
         margin-left: 28.75%;
+        list-style: none;
+        
 
         &__text {
             font-family: Lato;
             font-size: 14px;
             line-height: 26px;
-            font-weight: 700;
-            text-transform: uppercase;
+            font-weight: 700;            
             color: $main_text_color;
+            position: relative;                   
+            
+              
+        }
+        .mega-box {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #e8e8e8;
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: -30px;
+            right: auto;
+            width: 846px;
+            height: 310px;
+            
+          }
+          
+          
+          
+          .menu-item {
+            margin-right: 46px;
+            .mega_link__img{
+                background-image: url(./img/big_menu.png);
+                background-repeat: no-repeat;
+                background-size: contain; 
+                width: 255px;
+                height: 118px;
+                background-color: #efefef;
+                
+                
+            }
+            
+            .menu-headding {
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 32px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.025em;
+                color: #232323;
+                width: 235px;
+                border-bottom: 1px solid #e8e8e8;
+              }
+              .mega-link {
+                display: block;
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 28px;
+                font-weight: 400;
+                letter-spacing: 0.025em;
+                color: #646464;
+                text-decoration: none;
+                &__text{
+                    font-family: Lato;
+                    font-size: 22px;
+                    line-height: 28px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    letter-spacing: 0.025em;
+                    color: #ffffff;
+                    background-image: url(./img/big_menu.png);
+                    background-repeat: no-repeat;
+                    background-size: contain; 
+                    width: 255px;
+                    height: 118px;
+                    background-color: #efefef;
+                    span{
+                        position: absolute  ;
+                        margin-left: 174px;
+                        margin-top: 61px;
+                    }
+                }
+                
+              }
+              .mega-link:hover {
+                color: #f16d7f;
+              }
+          }
+          
+          .menu-item:last-of-type {
+            margin-right: 0;
+          }
+                     
+         
+          .mega-box::before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff;
+            position: absolute;
+            top: -6px;
+            left: 33px;
+            transform: rotate(45deg);
+            border-top: 1px solid #e8e8e8;
+            border-left: 1px solid #e8e8e8;
+          }
+        &__text:hover .mega-box{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap:20px;
+            
+            
+        }
+        .last:hover .mega-box {
+            right: 0;
+            left: auto;
+          }
+          
+        .last:hover .mega-box::before {
+            right: 30px;
+            left: auto;
         }
     }
 }
+
+
 
 .slider {
     height: 665px;
@@ -1002,7 +1124,3 @@ html {
 
 }
 
-#checkbox:checked + .button_browse__hidden_menu{
-    .button_browse__hidden_menu{
-        display: block}
-}
