@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__panel">
+            <img class="panel_logo" src="./img/panel_logo.png" alt="panel_logo">
+            <p class="brand_name">BRAN<span class="brand_name__D">D</span></p>
+            <div class="search_panel">
+                <details class="button_browse">
+                    <summary>Browse<i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+                    <ul class="button_browse__hidden_menu">
+                        <ul class="button_browse__hidden_menu__ul">WOMEN
+                            <div class="button_browse__hidden_menu__sharp"></div>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Dresses</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Tops</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Sweaters/Knits</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Jackets/Coats</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Blazers</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Denim</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Leggins/Pants</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Skirts/Shorts</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Accessories</a>
+                        </ul>
+                        <ul class="button_browse__hidden_menu__ul">MEN
+                            <div class="button_browse__hidden_menu__sharp"></div>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Tees/Tank tops</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Shirts/Polos</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Sweaters</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Sweatshirts/Hoodies</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Blazers</a>
+                            <a href="#" class="button_browse__hidden_menu__ul__low">Jackets/vests</a>
+                        </ul>
+                    </ul>
+                </details>
+
+                <input class="input_field" type="search" placeholder="Search for Item..." name="search">
+                <button class="button_search"><img class="search_logo" src="./img/icons8-search-16.png"
+                        style="width: 14px; height: 14px;" alt="search_logo"></button>
+            </div>
+            <details class="cart_icons">
+                <summary><img class="cart_icon" src="./img/cart_icon.svg" alt="cart_icon">
+                    <p class="ellipse_cart_icon">2</p>
+                </summary>
+                <ul>
+                    <div class="cart_card">
+                        <div class="cart_card__img">
+                            <a href="#"><img src="./img/cart_card_1.png" alt="card1"></a>
+                        </div>
+                        <div class="cart_card__info">
+                            <p class="cart_card__info__name">Rebox Zane</p>
+                            <div class="cart_card__rank">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                            <p class="cart_card__info__price">1 <span>x</span> $250</p>
+                        </div>
+                        <a href="#" class="cart_delete"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="cart_sharp"></div>
+                    <div class="cart_card">
+                        <div class="cart_card__img">
+                            <a href="#"><img src="./img/card_cart_2.png" alt="card2"></a>
+                        </div>
+                        <div class="cart_card__info">
+                            <p class="cart_card__info__name">Rebox Zane</p>
+                            <div class="cart_card__rank">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                            <p class="cart_card__info__price">1 <span>x</span> $250</p>
+                        </div>
+                        <a href="#" class="cart_delete"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="cart_sharp"></div>
+                    <p class="cart_total_price">TOTAL<span>$500.00</span></p>
+                    <a href="#" class="cart_checkout_link">Checkout</a>
+                    <a href="#" class="go_cart_link">Go to cart</a>
+                </ul>
+
+
+            </details>
+            <button class="account_button">
+                <p class="account_button__text">My Account</p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="14"
+                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                </svg>
+            </button>
+        </div>
+        <div class="header__nav">
+            <li class="header__nav__text">HOME</li>
+            <li class="header__nav__text">MAN
+                <div class="mega-box">
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                        <a href="#" class="mega-link">Jackets/Coats</a>
+                        <a href="#" class="mega-link">Blazers</a>
+                        <a href="#" class="mega-link">Denim</a>
+                        <a href="#" class="mega-link">Leggins/Pants</a>
+                        <a href="#" class="mega-link">Skirts/Shorts</a>
+                        <a href="#" class="mega-link">Accessories</a>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                        <a href="#" class="mega-link">Jackets/Coats</a>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                        <a href="#" class="mega-link">Jackets/Coats</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <div>
+                                <p class="mega-link__text"><span>Super sale!</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="header__nav__text">WOMEN</li>
+            <li class="header__nav__text">KIDS</li>
+            <li class="header__nav__text">ACCOSERIESE</li>
+            <li class="header__nav__text last">FEATURED
+                <div class="mega-box">
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                        <a href="#" class="mega-link">Jackets/Coats</a>
+                        <a href="#" class="mega-link">Blazers</a>
+                        <a href="#" class="mega-link">Denim</a>
+                        <a href="#" class="mega-link">Leggins/Pants</a>
+                        <a href="#" class="mega-link">Skirts/Shorts</a>
+                        <a href="#" class="mega-link">Accessories</a>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                        <a href="#" class="mega-link">Jackets/Coats</a>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                        <a href="#" class="mega-link">Jackets/Coats</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <div>
+                                <p class="mega-link__text"><span>Super sale!</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="header__nav__text last">HOT DEALS
+                <div class="mega-box">
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                        <a href="#" class="mega-link">Jackets/Coats</a>
+                        <a href="#" class="mega-link">Blazers</a>
+                        <a href="#" class="mega-link">Denim</a>
+                        <a href="#" class="mega-link">Leggins/Pants</a>
+                        <a href="#" class="mega-link">Skirts/Shorts</a>
+                        <a href="#" class="mega-link">Accessories</a>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                        <a href="#" class="mega-link">Jackets/Coats</a>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-headding">Women</h3>
+                        <a href="#" class="mega-link">Dresses</a>
+                        <a href="#" class="mega-link">Tops</a>
+                        <a href="#" class="mega-link">Sweaters/Knits</a>
+                        <a href="#" class="mega-link">Jackets/Coats</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <div>
+                                <p class="mega-link__text"><span>Super sale!</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </div>
+
+    </div>
+
+    <div class="breadcrumb">
+        <p class="text">New Arrivals</p>
+        <p>
+            <a href="#" class="breadcrumb__link">Home </a>/
+            <a href="#" class="breadcrum__link">Men </a>/
+            <a href="#" class="breadcrum__link pink">New Arrivals</a>
+        </p>
+    </div>
+
+    <div class="ship_adress">
+        <details class="first">
+            <summary>01. Shipping Adress</summary>
+            <ul class="ship_adress__panel">
+                <ul class="choice_panel">
+                    <h2>Check as a guest or register</h2>
+                    <h3>Register with us for future convenience</h3>
+                    <div class="input_but">
+                        <div class="input_one">
+                            <input type="radio" name="button" id="button1">
+                            <label for="button1">checkout as guest</label>
+                        </div>
+                        <div class="input_two">
+                            <input type="radio" name="button" id="button2">
+                            <label for="button2">register</label>
+                        </div>
+                    </div>
+                    <h2>register and save time!</h2>
+                    <h3>Register with us for future convenience</h3>
+                    <div class="advantages">
+                        <p class="h4"><i class="fa fa-angle-double-right" aria-hidden="true"></i><span>Fast and easy checkout</span></p>
+                        <p class="h4"><i class="fa fa-angle-double-right" aria-hidden="true"></i><span>Easy access to your order history and status</span></p>
+                    </div>
+                    <a class="cont_but" href="#">Continue</a>
+                </ul>
+                <ul class="form_panel">
+                    <h2>Already registed?</p>
+                    <h3>Please log in below</h3>
+                    <div class="email_in">
+                        <p class="email">EMAIL ADDRESS<span>*</span></p>
+                        <input type="email" name="" id="">
+                    </div>
+                    <div class="pass_in">
+                        <p class="pass">PASSWORD<span>*</span></p>
+                        <input type="pass" name="" id="">
+                    </div>
+                    <p class="footnote"><span>*</span>Required Fileds</p>
+                    <div class="login_but">
+                        <a class="login" href="">Log in</a>
+                        <a class="forg_pass" href="#">Forgot Password ?</a>
+                    </div>
+                </ul>
+            </ul>
+        </details>
+        <details>
+            <summary>02. BILLING INFORMATION</summary>
+        </details>
+        <details>
+            <summary>03. SHIPPING INFORMATION</summary>
+        </details>
+        <details>
+            <summary>04. SHIPPING METHOD</summary>
+        </details>
+        <details>
+            <summary>05. PAYMENT METHOD</summary>
+        </details>
+        <details>
+            <summary>06. ORDER REVIEW</summary>
+        </details>
+    </div>
+
+
+    <div class="subscribe">
+        <img class="subscribe__back" src="./img/subsribe_blur.png" alt="subsribe_blur">
+        <div class="subscribe__right">
+            <img class="subscribe__img1" src="./img/subscribe_ellipse1.png" alt="photo">
+            <div>
+                <p class="subscribe__text1">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <p class="subscribe__text2"><span class="subscribe__text2__pink">Bin Burhan</span>
+                    Dhaka, Bd</p>
+                <div class="subscribe__slide">
+                    <img class="subscribe__slider" src="./img/subscribe_slide.svg" alt="slider">
+                    <img class="subscribe__slider" src="./img/subscribe_slide.svg" alt="slider">
+                    <img class="subscribe__slider" src="./img/subscribe_slide.svg" alt="slider">
+                </div>
+            </div>
+        </div>
+        <div class="subscribe__left">
+            <p class="subscribe__left__p1">SUBSCRIBE</p>
+            <p class="subscribe__left__p2">FOR OUR NEWLETTER AND PROMOTION</p>
+            <div class="subscribe__left__input">
+                <input class="subscribe__left__input__text" type="email" placeholder="Enter Your Email">
+                <button class="subscribe__left__but">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="nav_brand">
+            <div class="brand_info">
+                <div class="brand_logo">
+                    <img class="brand_info__panel_logo" src="./img/panel_logo.png" alt="panel_logo">
+                    <p class="brand_info__brand_name">BRAN<span class="brand_info__brand_name__D">D</span></p>
+                </div>
+                <div class="brand_text">
+                    <p class="brand_logo__text">Objectively transition extensive data rather than cross functional
+                        solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                        Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
+                    <p class="brand_logo__text">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                </div>
+            </div>
+            <div class="company">
+                <label class="label_name">COMPANY</label>
+                <a class="link_footer" href="#">Home</a>
+                <a class="link_footer" href="#">Shop</a>
+                <a class="link_footer" href="#">About</a>
+                <a class="link_footer" href="#">How It Works</a>
+                <a class="link_footer" href="#">Contact</a>
+            </div>
+            <div class="info">
+                <label class="label_name">INFORMATION</label>
+                <a class="link_footer" href="#">Tearms & Condition</a>
+                <a class="link_footer" href="#">Privacy Policy</a>
+                <a class="link_footer" href="#">How to Buy</a>
+                <a class="link_footer" href="#">How to Sell</a>
+                <a class="link_footer" href="#">Promotion</a>
+            </div>
+            <div class="shop_cat">
+                <label class="label_name">SHOP CATEGORY</label>
+                <a class="link_footer" href="#">Men</a>
+                <a class="link_footer" href="#">Women</a>
+                <a class="link_footer" href="#">Child</a>
+                <a class="link_footer" href="#">Apparel</a>
+                <a class="link_footer" href="#">Brows All</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright__text">© 2017 Brand All Rights Reserved.</p>
+            <div class="link_icon">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -417,8 +417,7 @@
   justify-content: space-between;
   margin-top: 25px;
 }
-.product_panel .product_menu__filter__nav__trend .trend_link a,
-.product_panel .product_menu__filter__nav__trend .trend_link p {
+.product_panel .product_menu__filter__nav__trend .trend_link a, .product_panel .product_menu__filter__nav__trend .trend_link p {
   font-family: Lato;
   font-size: 14px;
   line-height: 26px;
@@ -735,6 +734,195 @@
   line-height: 26px;
   font-weight: 700;
   color: #ef5b70;
+}
+
+.ship_adress {
+  padding: 89px 230px 93px 230px;
+}
+.ship_adress details > summary::marker {
+  content: "";
+}
+.ship_adress details > summary {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  padding-top: 33px;
+  padding-bottom: 39px;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.ship_adress details[open] > summary {
+  border: 0;
+}
+.ship_adress .first .ship_adress__panel {
+  display: flex;
+  flex-direction: row;
+}
+.ship_adress .first .ship_adress__panel .choice_panel {
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+  margin-right: 291px;
+}
+.ship_adress .first .ship_adress__panel h2 {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 15px;
+}
+.ship_adress .first .ship_adress__panel h3 {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+  margin-bottom: 33px;
+}
+.ship_adress .first .ship_adress__panel .input_but {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 33px;
+  gap: 20px;
+}
+.ship_adress .first .ship_adress__panel .input_but label {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+}
+.ship_adress .first .ship_adress__panel .input_but input {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 2px solid #555555;
+}
+.ship_adress .first .ship_adress__panel .input_but .input_one {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.ship_adress .first .ship_adress__panel .input_but .input_two {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.ship_adress .first .ship_adress__panel .advantages {
+  margin-bottom: 38px;
+}
+.ship_adress .first .ship_adress__panel .advantages .h4 span {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+}
+.ship_adress .first .ship_adress__panel .advantages .fa {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+  margin-right: 4px;
+}
+.ship_adress .first .ship_adress__panel .cont_but {
+  display: flex;
+  justify-content: center;
+  padding: 19px 53px 19px 53px;
+  border: 1px solid #eaeaea;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  margin-bottom: 79px;
+}
+.ship_adress .first .ship_adress__panel .cont_but:hover {
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+}
+.ship_adress .first .ship_adress__panel .form_panel {
+  display: flex;
+  flex-direction: column;
+}
+.ship_adress .first .ship_adress__panel .form_panel p {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #222222;
+}
+.ship_adress .first .ship_adress__panel .form_panel h3 {
+  margin-bottom: 27px;
+}
+.ship_adress .first .ship_adress__panel .form_panel span {
+  font-family: Lato;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #ff0d0d;
+  margin-left: 2px;
+}
+.ship_adress .first .ship_adress__panel .form_panel input {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-bottom: 23px;
+  text-indent: 25px;
+}
+.ship_adress .first .ship_adress__panel .form_panel p.email {
+  margin-bottom: 16px;
+}
+.ship_adress .first .ship_adress__panel .form_panel p.pass {
+  margin-bottom: 16px;
+}
+.ship_adress .first .ship_adress__panel .form_panel .footnote {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #ff0d0d;
+  margin-bottom: 32px;
+}
+.ship_adress .first .ship_adress__panel .form_panel .footnote span {
+  margin-right: 2px;
+  margin-left: 0;
+}
+.ship_adress .first .ship_adress__panel .form_panel .login_but {
+  display: block;
+}
+.ship_adress .first .ship_adress__panel .form_panel .login_but .login {
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  padding: 19px 81px 19px 55px;
+  margin-right: 32px;
+}
+.ship_adress .first .ship_adress__panel .form_panel .login_but .forg_pass {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+.ship_adress .first .ship_adress__panel .form_panel .login_but .login:hover, .ship_adress .first .ship_adress__panel .form_panel .login_but .forg_pass:hover {
+  border-color: #f16d7f;
+  color: #f16d7f;
 }
 
 * {
