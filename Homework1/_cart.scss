@@ -1,0 +1,364 @@
+.shopping-cart {
+    padding-top: 90px;
+    padding-left: 230px;
+    padding-right: 233px;
+
+    .title-field {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.015em;
+        color: #222222;
+
+        p:nth-child(1) {
+            margin-right: 300px;
+        }
+
+        padding-bottom: 20px;
+    }
+
+    .cart-items {
+        &_item {
+            display: flex;
+            flex-direction: row;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+
+            .item-info {
+                display: flex;
+                flex-direction: row;
+                padding-top: 22px;
+                padding-bottom: 25px;
+                margin-right: 219px;
+
+
+                &_img {
+                    width: 100px;
+                    height: 115px;
+                    background-color: rgba(101, 169, 200, 0.09);
+                }
+
+                &_name {
+                    font-family: Lato;
+                    font-size: 13px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #222222;
+                    padding-left: 21px;
+                    padding-top: 13px;
+                    padding-bottom: 38px;
+                }
+
+                &_info {
+                    font-family: Lato;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #6f6e6e;
+                    padding-left: 21px;
+                }
+            }
+
+            .item-choice {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+
+                &_price,
+                &_quantity,
+                &_ship,
+                &_subtotal,
+                &_action {
+                    font-family: Lato;
+                    font-size: 13px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    color: #656565;
+                    text-transform: uppercase;
+                }
+
+                &_price {
+                    width: 76px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 85px;
+                }
+
+                &_quantity {
+                    width: 54px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    height: 30px;
+                    background-color: #ffffff;
+                    border: 1px solid #eaeaea;
+                    display: flex;
+                    text-align: center;
+                    margin-right: 85px;
+                }
+
+                &_ship {
+                    width: 58px;
+                    display: flex;
+                    justify-content: center;
+                    margin-right: 85px;
+                }
+
+                &_subtotal {
+                    width: 62px;
+                    display: flex;
+                    justify-content: center;
+                    margin-right: 85px;
+                }
+
+                &_action {
+                    width: 48px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                &_action:hover {
+                    color: $main_color_element;
+                }
+            }
+        }
+    }
+
+    .nav-link {
+        padding-top: 44px;
+        padding-bottom: 63px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #4a4a4a;
+            padding: 20px 39px 18px 39px;
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+        }
+
+        a:hover {
+            border: 1px solid $main_color_element;
+            color: $main_color_element;
+        }
+    }
+
+    .ship-info {
+        padding-bottom: 79px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 36px;
+
+        .address {
+            display: flex;
+            flex-direction: column;
+            width: 355px;
+
+            .title {
+                font-family: Lato;
+                font-size: 16px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #222222;
+                margin-bottom: 22px;
+            }
+
+            .select_city {
+
+                select {
+                    width: 355px;
+                    background-color: #ffffff;
+                    border: 1px solid #eaeaea;
+                    font-family: Lato;
+                    font-size: 13px;
+                    line-height: 1.2;
+                    font-weight: 300;
+                    color: #b1b1b1;
+                    padding: 16px 0px 16px 14px;
+                }
+
+                margin-bottom: 20px;
+            }
+
+            .state {
+
+                background-color: #ffffff;
+                border: 1px solid #eaeaea;
+                font-family: Lato;
+                font-size: 13px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #b1b1b1;
+                padding: 16px 0px 18px 17px;
+                margin-bottom: 20px;
+            }
+
+            .postcode {
+
+                background-color: #ffffff;
+                border: 1px solid #eaeaea;
+                font-family: Lato;
+                font-size: 13px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #b1b1b1;
+                padding: 16px 0px 16px 18px;
+                margin-bottom: 23px;
+            }
+
+            .quote {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 35px;
+                background-color: #ffffff;
+                border: 1px solid #eaeaea;
+                font-family: Lato;
+                font-size: 11px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #4a4a4a;
+            }
+
+            .quote:hover {
+                color: $main_color_element;
+                border: 1px solid $main_color_element;
+            }
+        }
+
+        .coupon {
+            display: flex;
+            flex-direction: column;
+            width: 355px;
+            .title {
+                font-family: Lato;
+                font-size: 16px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #222222;
+                margin-bottom: 28px;
+            }
+
+            .text {
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #000000;
+                margin-bottom: 24px;
+            }
+           
+            .state {
+                font-family: Lato;
+                font-size: 13px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #b1b1b1;                
+                background-color: #ffffff;
+                border: 1px solid #eaeaea;
+                padding: 16px 0px 17px 18px;
+                margin-bottom: 25px;
+            }
+
+            .apply {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Lato;
+                font-size: 11px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #4a4a4a;
+                width: 118px;
+                height: 35px;
+                background-color: #ffffff;
+                border: 1px solid #eaeaea;
+            }
+
+            .apply:hover {
+                border: 1px solid $main_color_element;
+                color: $main_color_element;
+            }
+        }
+
+        .to-checkout {
+            width: 355px;            
+            background-color: #f5f3f3;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 54px;
+           
+            
+
+            .total-price {                
+                border-bottom: 1px solid #e2e2e2;
+                margin-top: 40px;
+                margin-right: 41px;
+                padding-bottom: 22px;
+                margin-bottom: 17px;
+                margin-left: 43px;
+                .sub {
+                    font-family: Lato;
+                    font-size: 11px;
+                    line-height: 1.2;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #4a4a4a;                  
+                    text-align: right;
+                    margin-bottom: 14px;
+                    span{
+                        margin-left: 10px;
+                    }
+                }
+
+                .total {
+                    font-family: Lato;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #222222;
+                    
+                    text-align: right;
+                    span {
+                        color: #f16d7f;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            &_button {
+                display: flex;
+                justify-content: center;
+                align-items: center ;
+                width: 273px;
+                background-color: #f16d7f;
+                font-family: Lato;
+                font-size: 16px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+                padding: 19px 0px 18px 0px; 
+                margin-left: 43px; 
+            }
+        }
+    }
+}
